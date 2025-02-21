@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Nabil Allou</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: red;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav {
+            text-align: center;
+            padding: 10px;
+            background-color: #111;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            color: red;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .column {
+            width: 45%;
+            background-color: #111;
+            padding: 1px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .column:hover {
+            transform: scale(1.05);
+        }
+        iframe {
+            width: 100%;
+            height: 562px; /* 16:9 ratio */
+        }
+        img {
+            width: 100%;
+            height: 562px; /* 16:9 ratio */
+            object-fit: cover;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: red;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            color: white;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: yellow;
+        }
+        .video-container, .design-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .video-thumbnail, .design-thumbnail {
+            width: 70%;
+            margin: 40px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .video-thumbnail:hover, .design-thumbnail:hover {
+            transform: scale(1.05);
+        }
+        .thumbnail {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        /* Services Section */
+        .services {
+            display: flex;
+            justify-content: space-between;
+            gap: 100px;
+            margin-top: 6px;
+        }
+        .service {
+            background-color: #777;
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            flex: 1;
+            text-align: center;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .service:hover {
+            transform: scale(1.05);
+            background-color: #444;
+        }
+        .service i {
+            font-size: 40px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+        .service:hover i {
+            color: red;
+        }
+        .service h3 {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>Portfolio - Nabil Allou</header>
+    <nav>
+        <a href="ana.html">Home</a>
+        <a href="videos.html">Vidéos</a>
+        <a href="designs.html">Designs</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <a href="videos.html" class="column video-container">
+            <h2>Vidéos</h2>
+            <!-- Video 1 -->
+            <div class="video-thumbnail">
+                <img src="img/EDITOR  MOD.png" alt="Design 1" class="thumbnail">
+            </div>
+        </a>
+
+        <a href="designs.html" class="column design-container">
+            <h2>Designs</h2>
+            <!-- Design 1 -->
+            <div class="design-thumbnail">
+                <img src="img/GRAPHIC  DESING.png" alt="Design 1" class="thumbnail">
+            </div>
+        </a>
+    </div>
+
+    <!-- Services Section -->
+    <div class="container">
+        <h2>Services</h2>
+        <div class="services">
+            <div class="service">
+                <i class="fas fa-paint-brush"></i>
+                <h3>Graphic Design</h3>
+                <p>I offer a range of design services, including attention-grabbing thumbnails and banners, carousels for easy swiping, social media posts to reach customers, and unique photo manipulation.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-video"></i>
+                <h3>Video Editing</h3>
+                <p>I specialize in professional video editing and color correction. Whether you need polished YouTube videos or engaging content for TikTok and Instagram, I tailor my services to each platform’s unique style.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Motion Graphic</h3>
+                <p>I provide services in creating animated banners, stream packs, and YouTube accessories. Whether you need eye-catching visuals for banners, a cohesive stream pack for your live broadcasts.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Contactez-moi par email: <a href="mailto:email@example.com">allounabil342@gmail.com</a>
+    </footer>
+</body>
+</html>

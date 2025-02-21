@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designs - Nabil Allou</title>
+    <!-- Ajouter la bibliothèque Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: red;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav {
+            text-align: center;
+            padding: 10px;
+            background-color: #111;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 30px;
+        }
+        nav a:hover {
+            color: red;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding: 50px;
+        }
+        .design-card {
+            position: relative;
+            background-color: #111;
+            padding: 3px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 40px 8px rgba(0, 0, 0, 0.3);
+            transform: scale(1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .design-card:hover {
+            transform: scale(1.05);
+        }
+        .design-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .design-card:hover .design-img {
+            transform: scale(1.1);
+        }
+        .design-title {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 18px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 5px;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: red;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            color: white;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        .social-icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-icons a {
+            color: rgb(255, 0, 0);
+            margin: 0 15px;
+            font-size: 36px;
+            text-decoration: none;
+            transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+        .social-icons a:hover {
+            transform: scale(1.2); /* Agrandit l'icône au survol */
+            color: red; /* Change la couleur de l'icône */
+        }
+        .to-videos {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: red;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>Designs - Nabil Allou</header>
+    <nav>
+        <a href="ana.html">Home</a>
+        <a href="videos.html">Vidéos</a>
+        <a href="designs.html">Designs</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Description de Nabil Allou -->
+    <div style="text-align: center; margin-top: 30px; padding: 20px;">
+        <h2>Nabil Allou</h2>
+        <p>Je suis un designer passionné par la création visuelle et la vidéo. Mon travail allie créativité et technique pour réaliser des projets uniques et inspirants. Explorez mes designs et n'hésitez pas à me contacter pour toute collaboration.</p>
+    </div>
+
+    <!-- Icônes des réseaux sociaux -->
+    <div class="social-icons">
+        <a href="https://www.behance.net/nblll" target="_blank">
+            <i class="fab fa-behance-square"></i> <!-- Icône Behance -->
+        </a>
+        <a href="https://www.instagram.com/mistr_ph/" target="_blank">
+            <i class="fab fa-instagram-square"></i> <!-- Icône Instagram -->
+        </a>
+    </div>
+
+    <div class="container">
+        <!-- Design 1 -->
+        <div class="design-card">
+            <img src="img/h.jpg" alt="Design 1" class="design-img">
+            <div class="design-title">Design 1</div>
+        </div>
+        <!-- Design 2 -->
+        <div class="design-card">
+            <img src="img/j.jpg" alt="Design 2" class="design-img">
+            <div class="design-title">Design 2</div>
+        </div>
+        <!-- Design 3 -->
+        <div class="design-card">
+            <img src="img/k.png" alt="Design 3" class="design-img">
+            <div class="design-title">Design 3</div>
+        </div>
+        <!-- Design 4 -->
+        <div class="design-card">
+            <img src="img/d.jpg" alt="Design 4" class="design-img">
+            <div class="design-title">Design 4</div>
+        </div>
+        <!-- Design 5 -->
+        <div class="design-card">
+            <img src="img/a9wa 3orod  3.png" alt="Design 5" class="design-img">
+            <div class="design-title">Design 5</div>
+        </div>
+        <!-- Design 6 -->
+        <div class="design-card">
+            <img src="img/ffrrr222222222.png" alt="Design 6" class="design-img">
+            <div class="design-title">Design 6</div>
+        </div>
+        <!-- Design 7 -->
+        <div class="design-card">
+            <img src="img/t.jpg" alt="Design 7" class="design-img">
+            <div class="design-title">Design 7</div>
+        </div>
+        <!-- Design 8 -->
+        <div class="design-card">
+            <img src="img/u.jpg" alt="Design 8" class="design-img">
+            <div class="design-title">Design 8</div>
+        </div>
+        <!-- Design 9 -->
+        <div class="design-card">
+            <img src="img/r.jpg" alt="Design 9" class="design-img">
+            <div class="design-title">Design 9</div>
+        </div>
+        <!-- Design 10 -->
+        <div class="design-card">
+            <img src="img/e.jpg" alt="Design 10" class="design-img">
+            <div class="design-title">Design 10</div>
+        </div>
+        <!-- Design 11 -->
+        <div class="design-card">
+            <img src="img/i.jpg" alt="Design 11" class="design-img">
+            <div class="design-title">Design 11</div>
+        </div>
+        <!-- Design 12 -->
+        <div class="design-card">
+            <img src="img/o.jpg" alt="Design 12" class="design-img">
+            <div class="design-title">Design 12</div>
+        </div>
+        <!-- Design 13 -->
+        <div class="design-card">
+            <img src="img/w.jpg" alt="Design 13" class="design-img">
+            <div class="design-title">Design 13</div>
+        </div>
+        <!-- Design 14 -->
+        <div class="design-card">
+            <img src="img/BGGGG 01111111111.png" alt="Design 14" class="design-img">
+            <div class="design-title">Design 14</div>
+        </div>
+        <!-- Design 15 -->
+        <div class="design-card">
+            <img src="img/f.jpg" alt="Design 15" class="design-img">
+            <div class="design-title">Design 15</div>
+        </div>
+    </div>
+
+    <!-- Lien vers les vidéos -->
+    <div style="text-align: center; margin-top: 40px;">
+        <a href="videos.html" class="to-videos">Voir les Vidéos</a>
+    </div>
+
+    <footer>
+        Contactez-moi par email: <a href="mailto:allounabil342@gmail.com">allounabil342@gmail.com</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Nabil Allou</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: red;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+            width: 50%;
+            margin: 0 auto;
+            background-color: #111;
+            border-radius: 10px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #222;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: red;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>Contact - Nabil Allou</header>
+    <div class="container">
+        <h2>Contactez-moi</h2>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+            <button type="button" onclick="submitForm()">Envoyer</button>
+        </form>
+    </div>
+    <footer>Contact: allounabil342@gmail.com</footer>
+
+    <script>
+        function submitForm() {
+            const form = document.getElementById('contact-form');
+            const formData = new FormData(form);
+
+            // استعملنا fetch باش نرسل البيانات للخادم
+            fetch('YOUR_SERVER_ENDPOINT', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert('Votre message a été envoyé avec succès!');
+                    form.reset();  // باش تمسح البيانات من الفورمة بعد الإرسال
+                } else {
+                    alert('Il y a eu un problème lors de l\'envoi de votre message.');
+                }
+            })
+            .catch(error => {
+                alert('Erreur réseau: ' + error);
+            });
+        }
+    </script>
+</body>
+</html>
